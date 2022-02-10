@@ -1,2 +1,29 @@
 .header
 	grid-area: header
+	display: flex
+	border-bottom: 1px solid $border-color
+	&__logo
+		background-color: $sidebar-background-color
+		padding-left: 30px
+		padding-top: 19px
+		width: 280px
+		height: 100%
+	&__info
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex: 1
+		padding-top: 14px
+		padding-bottom: 14px
+		padding-right: 45px
+	&__nav
+		margin-left: 50px
+	&__tags
+		display: flex
+		align-items: center
+		margin-left: auto
+		margin-right: 6px
+	&__tag
+		height: 24px
+		&:not(:last-child)
+			margin-right: 10px
