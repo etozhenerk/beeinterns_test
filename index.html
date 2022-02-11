@@ -1,88 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="./css/style.min.css" />
-        <title>Document</title>
-    </head>
-    <body class="wrapper">
-        <header class="header">
-            <div class="header__logo">
-                <img src="./img/logo.png" alt="img:Logo" class="logo" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body class="wrapper">
+    <header class="header">
+      <div class="header__logo">
+        <img src="./img/logo.png" alt="img:Logo" class="logo" />
+      </div>
+      <div class="header__info">
+        <nav class="header__nav nav">
+          <a href="/" class="nav__link">FAQ</a>
+          <a href="/" class="nav__link">Поддержка</a>
+          <a href="/" class="nav__link">Настройки</a>
+        </nav>
+        <div class="header__tags">
+          <div class="header__tag tag">15 готовых дз</div>
+          <div class="header__tag tag">18 лекций</div>
+          <div class="header__tag tag">
+            <span class="tag__icon"></span><span><b>1200</b> часов</span>
+          </div>
+        </div>
+        <div class="user">
+          <div class="user__img">
+            <img
+              src="./img/user/avatar.jpg"
+              alt="user:Avatar"
+              class="user__avatar"
+            />
+          </div>
+          <div class="user__descr">
+            <div class="user__info">
+              <div class="user__name">Вася Пупкин</div>
+              <div class="user__status">Online</div>
             </div>
-            <div class="header__info">
-                <nav class="header__nav nav">
-                    <a href="/" class="nav__link">FAQ</a>
-                    <a href="/" class="nav__link">Поддержка</a>
-                    <a href="/" class="nav__link">Настройки</a>
-                </nav>
-                <div class="header__tags">
-                    <div class="header__tag tag">15 готовых дз</div>
-                    <div class="header__tag tag">18 лекций</div>
-                    <div class="header__tag tag">
-                        <span class="tag__icon"></span><span><b>1200</b> часов</span>
-                    </div>
-                </div>
-                <div class="user">
-                    <div class="user__img">
-                        <img src="./img/user/avatar.jpg" alt="user:Avatar" class="user__avatar" />
-                    </div>
-                    <div class="user__descr">
-                        <div class="user__info">
-                            <div class="user__name">Вася Пупкин</div>
-                            <div class="user__status">Online</div>
-                        </div>
-                        <div class="user__tag tag tag--primary">pro</div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="sidebar">
-            <ul class="menu">
-                <li class="menu_item">Программа</li>
-                <li class="menu_item">МЕНТОРЫ</li>
-                <li class="menu_item">
-                    ЛЕКЦИИ
-                    <ul class="submenu">
-                        <li class="submenu__item">HTML/CSS</li>
-                        <li class="submenu__item">GIT</li>
-                        <li class="submenu__item">JavaScript</li>
-                        <li class="submenu__item">React</li>
-                        <li class="submenu__item">Angular</li>
-                        <li class="submenu__item">Data</li>
-                    </ul>
-                </li>
-                <li class="menu_item">ПРАВИЛА ПОСТУПЛЕНИЯ</li>
-                <li class="menu_item">НОВОСТИ</li>
-                <li class="menu_item">ОБРАТНАЯ СВЯЗЬ</li>
-            </ul>
-            <div>
-                <span>Получать рассылку</span>
-                <span>иконка</span>
-            </div>
-        </section>
-        <main class="main">
+            <div class="user__tag tag tag--primary">pro</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="sidebar">
+      <ul class="menu">
+        <li class="menu__item">Программа</li>
+        <li class="menu__item">МЕНТОРЫ</li>
+        <li class="menu__item">
+          ЛЕКЦИИ
+          <ul class="submenu">
+            <li class="submenu__item">HTML/CSS</li>
+            <li class="submenu__item">GIT</li>
+            <li class="submenu__item">JavaScript</li>
+            <li class="submenu__item">React</li>
+            <li class="submenu__item">Angular</li>
+            <li class="submenu__item">Data</li>
+          </ul>
+        </li>
+        <li class="menu__item">ПРАВИЛА ПОСТУПЛЕНИЯ</li>
+        <li class="menu__item">НОВОСТИ</li>
+        <li class="menu__item">ОБРАТНАЯ СВЯЗЬ</li>
+      </ul>
+      <div>
+        <span>Получать рассылку</span>
+        <span>иконка</span>
+      </div>
+    </section>
+    <main class="main">
+      <section class="main__section section">
+        <div class="section__header">
+          <div class="section__name">
+            <span class="section__suptitle">базовый уровень</span>
+            <h2 class="section__title">html/css</h2>
+          </div>
+          <div class="section__buttons">
             <button class="button">Смотреть</button>
-
             <div class="arrow arrow--left"></div>
             <div class="arrow arrow--right"></div>
-            <div class="card">
-                <span class="card__tag tag tag--primary">Лекция</span>
-                <img src="./img/card/card-1.jpg" alt="card:IMG" />
-                <div class="card__descr">
-                    <h2 class="card__title">Структура HTML</h2>
-                    <div class="card__subtitle">Назначение блоков: head, body</div>
-                </div>
-                <div class="card__footer">
-                    <div class="card__date">01.02.2022</div>
-                    <button class="button">Смотреть</button>
-                </div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
             </div>
-        </main>
-    </body>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__section section">
+        <div class="section__header">
+          <div class="section__name">
+            <span class="section__suptitle">базовый уровень</span>
+            <h2 class="section__title">html/css</h2>
+          </div>
+          <div class="section__buttons">
+            <button class="button">Смотреть</button>
+            <div class="arrow arrow--left"></div>
+            <div class="arrow arrow--right"></div>
+          </div>
+        </div>
+        <div class="section__body">
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+          <div class="card">
+            <span class="card__tag tag tag--primary">Лекция</span>
+            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+            <div class="card__descr">
+              <h2 class="card__title">Структура HTML</h2>
+              <div class="card__subtitle">Назначение блоков: head, body</div>
+            </div>
+            <div class="card__footer">
+              <div class="card__date">01.02.2022</div>
+              <button class="button">Смотреть</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
