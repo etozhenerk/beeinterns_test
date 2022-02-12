@@ -1,4 +1,22 @@
 .sidebar
+	position: fixed
+	z-index: 1
+	top: 72px
+	width: 280px
+	height: calc(100vh - 72px)
 	grid-area: sidebar
 	background-color: $sidebar-background-color
 	color: $white
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	padding: 30px 0
+	&__footer
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-left: 30px
+		padding-right: 30px
+		font-size: 14px
+		line-height: 10px
+		color: $gray

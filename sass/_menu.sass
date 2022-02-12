@@ -1,13 +1,23 @@
 .menu
-    padding-top: 30px
     padding-bottom: 14px
     border-bottom: 1px solid $border-color
+    &--active
+        .menu__icon
+            transform: rotate(180deg)
     &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
         font-weight: normal
         font-size: 14px
         line-height: 20px
         color: $white
         text-transform: uppercase
-        padding-top: 6px
-        padding-left: 30px
-        padding-bottom: 6px
+        padding: 10px 30px
+        border-left: 3px solid $sidebar-background-color
+        cursor: pointer
+        &:hover
+            border-left: 3px solid $primary
+            background-color: rgba($white, 0.05)
+    &__icon
+        cursor: pointer

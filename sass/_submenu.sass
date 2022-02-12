@@ -1,0 +1,23 @@
+.submenu
+  overflow: hidden
+  height: 0
+  transition: .4s
+  &--active
+    height: 240px
+  &__item
+    display: flex
+    align-items: center
+    padding: 11px 50px
+    border-left: 3px solid $sidebar-background-color
+    cursor: pointer
+    &:hover
+      border-left: 3px solid $primary
+      background-color: rgba($white, 0.05)
+      .submenu__icon
+        fill: $primary
+        opacity: 1
+  &__title
+    font-size: 14px
+    line-height: 10px
+  &__icon
+    margin-right: 25px
