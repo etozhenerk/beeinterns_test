@@ -1,7 +1,7 @@
 .card
     position: relative
     width: 255px
-    height: 294px
+    min-height: 294px !important
     background-color: $card-background-color
     border-radius: 6px
     color: $white
@@ -13,9 +13,12 @@
     &__img
         height: 144px
     &__descr
+        display: flex
+        flex-direction: column
+        min-height: 88px
         padding-top: 15px
         padding-left: 15px
-        padding-bottom: 33px
+        padding-right: 25px
         border-bottom: 1px solid rgba(216, 216, 216, 0.1)
     &__title
         font-size: 16px

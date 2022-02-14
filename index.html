@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="./css/style.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
         <script defer src="./js/script.js"></script>
         <title>Document</title>
     </head>
@@ -193,17 +195,29 @@
                         </div>
                         <div class="section__buttons">
                             <button class="button">Смотреть</button>
-                            <div class="arrow arrow--left"></div>
-                            <div class="arrow arrow--right"></div>
+                            <div class="arrow arrow--left arrow--left-first-slider"></div>
+                            <div class="arrow arrow--right arrow--right-first-slider"></div>
                         </div>
                     </div>
-                    <div class="section__body">
+                    <div class="section__body first-slider">
+                      <div class="card">
+                          <span class="card__tag tag tag--primary">Лекция</span>
+                          <img src="./img/card/card-1.jpg" alt="card:IMG" />
+                          <div class="card__descr">
+                              <h2 class="card__title">Структура HTML</h2>
+                              <div class="card__subtitle">Назначение блоков: head, body</div>
+                          </div>
+                          <div class="card__footer">
+                              <div class="card__date">01.02.2022</div>
+                              <button class="button">Смотреть</button>
+                          </div>
+                        </div>  
                         <div class="card">
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">Подключение стилей</h2>
+                                <div class="card__subtitle">Виды подключения стилей. Подключение шрифтов</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -214,8 +228,8 @@
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">CSS</h2>
+                                <div class="card__subtitle">Базовый синтаксис CSS: селекторы, классы</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -226,8 +240,8 @@
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">Наследие и каскад</h2>
+                                <div class="card__subtitle">Наследие и каскад</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -256,11 +270,11 @@
                         </div>
                         <div class="section__buttons">
                             <button class="button">Смотреть</button>
-                            <div class="arrow arrow--left"></div>
-                            <div class="arrow arrow--right"></div>
+                            <div class="arrow arrow--left arrow--left-second-slider"></div>
+                            <div class="arrow arrow--right arrow--right-second-slider"></div>
                         </div>
                     </div>
-                    <div class="section__body">
+                    <div class="section__body second-slider">
                         <div class="card">
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
@@ -277,8 +291,8 @@
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">HTML-формы</h2>
+                                <div class="card__subtitle">HTML-формы</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -289,8 +303,8 @@
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">Flex</h2>
+                                <div class="card__subtitle">Принципы современной верстки сайта на flex</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -301,8 +315,20 @@
                             <span class="card__tag tag tag--primary">Лекция</span>
                             <img src="./img/card/card-1.jpg" alt="card:IMG" />
                             <div class="card__descr">
-                                <h2 class="card__title">Структура HTML</h2>
-                                <div class="card__subtitle">Назначение блоков: head, body</div>
+                                <h2 class="card__title">Media и viewport</h2>
+                                <div class="card__subtitle">Адаптивная верстка. Использование media и viewport</div>
+                            </div>
+                            <div class="card__footer">
+                                <div class="card__date">01.02.2022</div>
+                                <button class="button">Смотреть</button>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <span class="card__tag tag tag--primary">Лекция</span>
+                            <img src="./img/card/card-1.jpg" alt="card:IMG" />
+                            <div class="card__descr">
+                                <h2 class="card__title">CSS Grid</h2>
+                                <div class="card__subtitle">CSS Grid</div>
                             </div>
                             <div class="card__footer">
                                 <div class="card__date">01.02.2022</div>
@@ -313,5 +339,34 @@
                 </section>
             </div>
         </main>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script>
+          $(document).ready(function(){
+            $('.first-slider').slick(
+              {
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: false,
+                variableWidth: true,
+                prevArrow: $(".arrow--left-first-slider"),
+                nextArrow: $(".arrow--right-first-slider"),
+              }
+            );
+            $('.second-slider').slick(
+              {
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                dots: false,
+                variableWidth: true,
+                prevArrow: $(".arrow--left-second-slider"),
+                nextArrow: $(".arrow--right-second-slider"),
+              }
+            );
+          });
+        </script>
     </body>
 </html>
